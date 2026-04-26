@@ -81,9 +81,9 @@ Higher score → Higher likelihood of suspicious behavior
 
 ## Repository Structure
 
-├── data/ # Dataset (or sample)
-├── notebook/ # Kaggle / Python analysis
-├── dashboards/ # Tableau screenshots
+├── data/
+├── notebook/
+├── dashboards/
 ├── README.md
 
 
