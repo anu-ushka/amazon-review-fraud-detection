@@ -1,95 +1,95 @@
 # Amazon Review Analysis: Detecting Suspicious Patterns
 
 ## Overview
-This project analyzes Amazon food reviews to identify suspicious or potentially fake reviews using a rule-based scoring approach. The goal is to uncover patterns in user behavior, rating trends, and review characteristics.
+This project focuses on analyzing Amazon food reviews to identify suspicious review behavior using a rule-based scoring approach. The analysis was performed on a large-scale review dataset to study patterns related to ratings, review characteristics, and user activity.
+
+The project involved data cleaning, feature engineering, exploratory analysis, and dashboard creation to better understand how suspicious reviews differ from normal reviews.
 
 ---
 
 ## Objectives
-- Detect suspicious reviews using heuristic signals  
-- Analyze rating behavior and review patterns  
-- Build interactive dashboards for insight generation  
-
----
-
-## Tech Stack
-- **Python** (Pandas, NumPy)  
-- **Tableau** (Data Visualization)  
-- **Excel / CSV** (Data Handling)  
+- Analyze review and rating patterns in Amazon review data
+- Identify potentially suspicious reviews using heuristic indicators
+- Build interactive dashboards for trend and behavior analysis
+- Derive insights from review characteristics and user activity
 
 ---
 
 ## Dataset
-- Amazon Fine Food Reviews Dataset (~500K records)  
-- Includes: review text, rating, user ID, product ID, timestamps  
+The project uses the Amazon Fine Food Reviews dataset containing over 500,000 reviews.
+
+The dataset includes:
+- Review text
+- Review summary
+- Product and user identifiers
+- Ratings
+- Helpfulness metrics
+- Timestamps
 
 ---
 
-## Approach
-
-### 1. Data Preprocessing
-- Cleaned missing and duplicate values  
-- Converted timestamps and structured data  
-
-### 2. Feature Engineering
-Created key indicators:
-- Short Reviews  
-- Extreme Ratings (1⭐ & 5⭐)  
-- Excessive Exclamation Usage  
-- High Review Frequency Users  
-- Duplicate Reviews  
-
-### 3. Fake Review Scoring
-A rule-based score was assigned:
-
-
-Fake Score = Sum of suspicious indicators
-
-
-Higher score → Higher likelihood of suspicious behavior
+## Tools & Technologies
+- Python (Pandas, NumPy)
+- Tableau
+- CSV / Excel
 
 ---
 
-## 📈 Key Insights
-- Majority of reviews fall in low suspicious score ranges  
-- Higher suspicious activity observed in **extreme ratings (1⭐ & 5⭐)**  
-- Suspicious reviews tend to have **longer, exaggerated content**  
-- Certain behavioral patterns strongly correlate with suspicious activity  
+## Methodology
+
+### Data Preprocessing
+- Cleaned missing and inconsistent values
+- Structured timestamp and review-related fields
+- Prepared the dataset for analysis and visualization
+
+### Feature Engineering
+Several indicators were created to identify suspicious behavior, including:
+- Extreme ratings (1-star and 5-star reviews)
+- Very short reviews
+- Excessive punctuation usage
+- Repeated user activity
+- Duplicate review patterns
+
+### Suspicious Review Scoring
+A rule-based scoring system was created by combining multiple suspicious indicators into a single fake score.
+
+Higher scores indicate a higher likelihood of suspicious review behavior.
 
 ---
 
 ## Dashboards
 
 ### Overview Dashboard
-- Total reviews & suspicious %  
-- Rating distribution  
-- Suspicious vs Normal split  
-- Review trends over time  
+Provides a high-level view of:
+- Rating distribution
+- Suspicious vs normal review ratio
+- Review trends over time
+- Key review metrics
 
 ### Analysis Dashboard
-- Fake score distribution  
-- Suspicious % by rating  
-- Avg review length comparison  
-- Feature contribution analysis  
+Focused on deeper suspicious behavior analysis:
+- Fake score distribution
+- Suspicious activity across ratings
+- Review length comparison
+- Feature-based suspicious patterns
 
 ---
 
-## Live Dashboard
-👉 
+## Key Insights
+- Most reviews fall into lower suspicious score ranges
+- Extreme ratings show comparatively higher suspicious activity
+- Suspicious reviews tend to contain longer and more exaggerated content
+- Multiple behavioral indicators contribute to suspicious review patterns
 
 ---
-
 ## Repository Structure
 
-├── data/
-├── notebook/
-├── dashboards/
-├── README.md
-
+data/          # Dataset files
+notebook/      # Python analysis notebook
+dashboards/    # Tableau dashboard screenshots
+README.md
 
 ---
 
 ## Conclusion
-This project demonstrates how simple heuristic-based methods can effectively identify suspicious patterns in large-scale review data, providing actionable insights for trust and quality analysis.
-
----
+This project demonstrates how analytical techniques and rule-based scoring can be used to identify suspicious patterns in large-scale review data. The analysis highlights how review behavior, rating trends, and content characteristics can help detect potentially unreliable reviews.
