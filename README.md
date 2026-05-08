@@ -83,14 +83,14 @@ Focused on deeper suspicious behavior analysis:
 
 ---
 ## Repository Structure
-
+```
 amazon-review-fraud-detection/
 │
-├── data/                 # Dataset files
+├── data/                 # Dataset link
 ├── notebook/             # Python / Kaggle analysis notebook
-├── dashboards/           # Tableau dashboard screenshots
+├── dashboards/           # Tableau dashboard screenshots & link
 ├── README.md
-
+```
 ---
 
 ## Conclusion
